@@ -11,6 +11,7 @@ module.exports = tseslint.config(
       ...tseslint.configs.recommended,
       ...tseslint.configs.stylistic,
       ...angular.configs.tsRecommended,
+      require("eslint-config-prettier"),
     ],
     processor: angular.processInlineTemplates,
     rules: {
@@ -30,7 +31,7 @@ module.exports = tseslint.config(
           style: "kebab-case",
         },
       ],
-      "prettier/prettier": "error",
+      "prettier/prettier": "warn",
     },
     plugins: {
       prettier: require("eslint-plugin-prettier"),
@@ -43,9 +44,5 @@ module.exports = tseslint.config(
       ...angular.configs.templateAccessibility,
     ],
     rules: {},
-  },
-  {
-    files: ["**/*.ts", "**/*.html"],
-    extends: [require("eslint-config-prettier")],
   },
 );
