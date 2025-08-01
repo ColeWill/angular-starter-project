@@ -30,6 +30,10 @@ module.exports = tseslint.config(
           style: "kebab-case",
         },
       ],
+      "prettier/prettier": "error",
+    },
+    plugins: {
+      prettier: require("eslint-plugin-prettier"),
     },
   },
   {
@@ -39,5 +43,9 @@ module.exports = tseslint.config(
       ...angular.configs.templateAccessibility,
     ],
     rules: {},
-  }
+  },
+  {
+    files: ["**/*.ts", "**/*.html"],
+    extends: [require("eslint-config-prettier")],
+  },
 );
