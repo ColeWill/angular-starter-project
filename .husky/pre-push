@@ -1,0 +1,5 @@
+# Run Vitest
+echo "🧪 Running Vitest..."
+pnpm exec vitest run
+
+echo "✅ Tests passed! Pushing..."

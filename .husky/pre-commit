@@ -1,0 +1,9 @@
+# Run prettier check
+echo "🎨 Running Prettier check..."
+pnpm run format:check
+
+# Run ESLint
+echo "🔍 Running ESLint..."
+pnpm run lint
+
+echo "✅ Formatting and linting checks passed!"
