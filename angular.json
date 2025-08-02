@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-stater-project": {
+    "angular-starter-project": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -61,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-stater-project:build:production"
+              "buildTarget": "angular-starter-project:build:production"
             },
             "development": {
-              "buildTarget": "angular-stater-project:build:development"
+              "buildTarget": "angular-starter-project:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
           "builder": "@angular/build:extract-i18n"
         },
         "test": {
-          "builder": "@angular/build:karma",
+          "builder": "@analogjs/vitest-angular:test",
           "options": {
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
