@@ -15,6 +15,6 @@
 }
 ```
 
-> 3. Add this line to `./src/styles.css`
+> 3. Add this line to `./src/styles.css` in your project
 
 `@import "tailwindcss"`
