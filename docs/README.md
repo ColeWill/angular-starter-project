@@ -4,4 +4,4 @@ List of add-ons installed
 - eslint - code smells. linting
 - prettier - code formatting
 - tailwind - CSS helper classes
-- github actions
+- github actions - build app before PRs are allowed on github
